@@ -1,0 +1,396 @@
+* {
+   text-decoration: none;
+}
+
+body {
+   background: #1f242d;
+   color: #fff;
+}
+
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 2rem;
+   background: #1f242d;
+}
+
+.navbar a {
+   font-size: 1.5rem;
+   margin-left: 4rem;
+   color: #fff;
+}
+
+.logo {
+   font-size: 2.5rem;
+   font-weight: 600;
+   color: #fff;
+}
+
+.navbar a:hover {
+   color: #0ef;
+}
+
+.logo:hover {
+   color: coral;
+}
+
+span {
+   color: #0ef;
+}
+
+section {
+   min-height: 100vh;
+   padding: 5rem 9% 2rem;
+}
+
+.home {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.home-content h3 {
+   font-size: 2rem;
+   font-weight: 700;
+}
+
+.home-content h1 {
+   font-size: 4.5rem;
+   font-weight: 700;
+   line-height: 0.2;
+}
+
+.home-img img {
+   width: 20vw;
+}
+
+.social-media a {
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 6rem;
+   height: 6rem;
+   margin: 6rem 3rem 6rem 0;
+   border: 0.4rem solid rgb(21, 255, 0);
+   border-radius: 50%;
+   transition: .5s ease;
+}
+
+.social-media a:hover {
+   background: rgb(255, 0, 221);
+   color: #0ae963f3;
+   box-shadow: 0 0 1rem rgb(255, 153, 0);
+
+}
+
+.btn {
+   display: inline-block;
+   padding: 1rem 2rem;
+   background: #0ef;
+   border-radius: 4rem;
+   box-shadow: 0 0 1rem #0ef;
+   font-size: 1rem;
+   color: #323946;
+   letter-spacing: .1rem;
+   font-weight: 600;
+   transition: .5s ease;
+}
+
+.btn:hover {
+   box-shadow: none;
+}
+
+.about {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem;
+   background: #1f242d;
+
+}
+
+.about-img img {
+   width: 25vw;
+
+}
+
+.heading {
+   text-align: center;
+   font-size: 3rem;
+}
+
+.about-content h2 {
+   text-align: left;
+   font-size: 3.5rem;
+   line-height: 0.1;
+}
+
+.about-content h3 {
+   font-size: 2.5rem;
+
+
+}
+
+.services h2 {
+   margin-bottom: 5rem;
+}
+
+.service-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 2rem;
+}
+
+.service-container .service-box {
+   flex: 0 0 20%;
+   background-color: #323946;
+   padding: 3rem 2rem 4rem;
+   border-radius: 2rem;
+   text-align: center;
+   border: .2rem solid #1f242d;
+   transition: .5s ease;
+}
+
+.service-container .service-box:hover {
+   border-color: #0ef;
+   transform: scale(1.02);
+
+}
+
+.service-box i {
+   color: #0ef;
+   font-size: 3rem;
+}
+
+.service-box h3 {
+   font-size: 2.5rem;
+}
+
+.service-box p {
+   font-size: 1.5rem;
+   margin: 1rem 0 3rem;
+}
+
+.project {
+   background: #1f242d;
+}
+
+.project h2 {
+   margin-bottom: 4rem;
+}
+
+.project-container {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   align-items: center;
+   gap: 2.5rem;
+
+}
+
+.project-container .project-box {
+   position: relative;
+   border-radius: 2rem;
+   box-shadow: 0 0 1rem #0ef;
+   overflow: hidden;
+   display: flex;
+
+}
+
+.project-box img {
+   width: 100%;
+   transition: .5s ease;
+}
+
+.project-box:hover img {
+   transform: scale(1.1);
+}
+
+.project-box .portfolio-layer {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background-image: linear-gradient(rgba (0, 0, 0, 0.1), #0ef);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   padding: 0 0;
+   transition: .5s ease;
+   transform: translateY(100%);
+}
+
+.project-box:hover .portfolio-layer {
+   transform: translateY(0);
+}
+
+.portfolio-layer h4 {
+   font-size: 2.5rem;
+}
+
+.portfolio-layer p {
+   font-size: 1.6rem;
+   margin: 0.3rem 0 1rem;
+}
+
+.portfolio-layer a {
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 5rem;
+   height: 5rem;
+   background: #fff;
+   border-radius: 50%;
+}
+
+.portfolio-layer a i {
+   font-size: 2rem;
+   color: #323946;
+
+}
+
+.carousel-container {
+   display: flex;
+   align-items: center;
+   position: relative;
+   width: 100%;
+   max-width: 900px;
+   margin: 0 auto;
+   overflow: hidden;
+}
+
+.carousel {
+   display: flex;
+   gap: 20px;
+   transition: transform 0.4s ease-in-out;
+
+}
+
+.testimonial-box {
+   flex: 0 0 300px;
+   background-color: #f4f4f4;
+   border-radius: 8px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   padding: 15px;
+   text-align: center;
+}
+
+.testimonial-box img {
+   width: 100%;
+   border-radius: 8px;
+   margin-bottom: 10px;
+}
+
+.testimonial-content h4 {
+   font-size: 18px;
+   margin-bottom: 8px;
+   color: #333;
+}
+
+.testimonial-content p {
+   font-size: 14px;
+   color: #666;
+
+}
+
+.carousel-btn {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background-color: blue;
+   color: #fff;
+   border: none;
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+   cursor: pointer;
+   z-index: 10;
+}
+
+.prev-btn {
+   left: 10px;
+}
+
+.next-btn{
+   right: 10px;
+   
+}
+.carousel-btn:hover{
+   background-color: #555;
+}
+   
+.contact h2{
+   margin-bottom: 3rem;
+}
+.contact form{
+   max-width: 70rem;
+   margin: 1rem auto;
+   text-align: center;
+   margin-bottom: 3rem;
+   
+}
+.contact form .input-box{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+.contact form .input-box input, 
+.contact form textarea{
+   width: 100%;
+   padding: 1.5rem;
+   font-size: 1.5rem;
+   color: #fff;
+   background: #323946;
+   border-radius: .8rem;
+   margin: .7rem 0;
+}
+.contact form .input-box input{
+width: 43%;
+}
+.contact form textarea{
+   resize: none;
+}
+.contact form .btn{
+   margin-top: 2rem;
+   cursor: pointer;
+}
+.footer{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   padding: 2rem 9%;
+   background: #323946;
+   
+}
+.footer-text p{
+   font-size: 1.5rem;
+
+}
+.footer-icon-top a{
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   padding: 1rem;
+   background: #0ef;
+   border-radius: 1rem;
+   transition: .5s ease;
+}
+.footer-icon-top a:hover{
+   box-shadow: 0 0 1rem #0ef;
+}
+.footer-icon-top a i{
+   font-size: 2rem;
+   color: #1f242d;
+}
+.footer-text{
+   font-size: 1.5rem ;
+}
+.ehobby{
+   color: #fff;
+}
